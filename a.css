@@ -1,0 +1,16 @@
+﻿h1,h2,h3,div,input,button{font-family:arial;color:#545;}
+h1 {font-size:50px}
+div.main {margin:0 auto 0 auto;width:1200px}
+div.view {height:100px;width:100px;background-color:#ccdd77;float:left;display:inline;border:2px solid white;margin-top:10px}
+div.viewInt {padding:10px;font-size:18px;color:#249ade}
+label{margin-left:20px}
+input,button {
+    padding:8px;border:3px solid lightblue;
+    font-size:18px;
+
+    
+}           
+button{
+    color:white;
+    background-color:#249ade
+}            

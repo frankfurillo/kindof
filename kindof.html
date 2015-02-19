@@ -1,14 +1,38 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <script src="kindof.js"></script>
-    <script>
-        //alert(kindof(0, 1.1))
-        alert(kindof('#0044cc'));
-    </script>
+    <title>kindof js</title>
+    <script src="src/kindof.js"></script>
+    <link rel="stylesheet" href="a.css"/>
 </head>
 <body>
+    <div class="main">
+        <header>
+            <h1>kindof js</h1>
+        </header>
+        <section>
+            <h2>Example</h2>
+            <div>
+                <h3>Number</h3>
 
+                <input id="inp2" value="98" />
+                <label for="ishness2">Ishness:</label>
+                <input id="ishness2" value="1" />
+                <button onclick="document.getElementById('result2').innerHTML = kindof(parseInt(document.getElementById('inp2').value), parseInt(document.getElementById('ishness2').value))">Go</button>
+                <div style="clear:both"></div>
+                <div class="viewInt" id="result2">[Result]</div>
+            </div>
+            <div style="margin-top:20px">
+                <h3>Color</h3>
+                <input id="inp" value="#CCDD77" />
+                <label for="ishness2">Ishness:</label>
+                <input id="ishness" value="0.15" />
+                <button onclick="document.getElementById('result').style.backgroundColor = kindof(document.getElementById('inp').value, document.getElementById('ishness').value); document.getElementById('ref').style.backgroundColor = document.getElementById('inp').value">Go</button>
+                <div style="clear:both"></div>
+                <div id="ref" class="view"></div>
+                <div class="view" id="result"></div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

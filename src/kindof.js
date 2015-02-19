@@ -1,22 +1,19 @@
 ﻿(function (w) {
     var sortof = {
         kindof: function (v, ishness) {
-            self: this;
             var i = ishness || 0.1 //10 %
             //var s = v * ishness;
             if (isNaN(v) && v.indexOf('#') == 0) {
                 //color probably
-                //var stripped = v.substring(1);
-                var rgb=   [1, 3, 5].map(function (o) {
+                var rgb = [1, 3, 5].map(function (o) {
                     return parseInt(v.slice(o, o + 2),16) ; //this is maybe the coolest thing i have ever seen.
                 });
                 return '#'+ rgb.map(function (a) {
                     return sortof.convertToHex(kindof(a, i));
-                });
-
+                }).join('');
             }
             //DEFAULT, assume number
-            return ((Math.random() * (v * i)) + v - ((v * ishness) / 2));
+            return ((Math.random() * (v * i)) + v - ((v * i) / 2));
         },
         closeEnough: function (v, ceil) {
             return (v > (ceil - 1)) ? ceil : v;
