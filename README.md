@@ -18,3 +18,6 @@ Usage:
 		//or
 		alert(kindof('#CCD4E7')); 
 	</script>
+	
+** Demo site **
+[Demo](www.gunnarfranklin.com/kindof)
