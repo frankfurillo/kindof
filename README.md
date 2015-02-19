@@ -19,5 +19,4 @@ Usage:
 		alert(kindof('#CCD4E7')); 
 	</script>
 	
-** Demo site **
-[Demo](www.gunnarfranklin.com/kindof)
+[Demo](http://www.gunnarfranklin.com/kindof)
